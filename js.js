@@ -130,7 +130,7 @@ function defaultData(city){
                      </div>
                      <div class="txt">
                         <p class="time-Class">
-                           <img src="../作業/image/icons_clock.png" alt="">
+                           <img src="image/icons_clock.png" alt="">
                            ${dataText[i].Opentime}
                         </p>
                         <p class="address-Class">
@@ -166,7 +166,7 @@ function updateList(e){
                      </div>
                      <div class="txt">
                         <p class="time-Class">
-                           <img src="../作業/image/icons_clock.png" alt="">
+                           <img src="image/icons_clock.png" alt="">
                            ${dataText[i].Opentime}
                         </p>
                         <p class="address-Class">
