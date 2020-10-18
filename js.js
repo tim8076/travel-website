@@ -3,6 +3,7 @@ let data ;
 let dataText ;
 let area = document.getElementById('Area');
 let btn = document.querySelectorAll('.btn');
+let hotplace = document.querySelector('.hot-place');
 let place = document.querySelector('.container');
 let title = document.getElementById('titleID');
  // 先建立新陣列
@@ -193,12 +194,22 @@ function updateList(e){
 area.addEventListener('change',updateList);
 
 //點擊熱門區域 並印出網頁
-for(let i=0;i<btn.length;i++){
-	btn[i].addEventListener('click',function(e){
-       updateList(e);		
-	})
+
+hotplace.addEventListener('click',showHot,false);
+function showHot(e){
+   e.preventDefault();
+   if (e.target.nodeName !== 'BUTTON'){
+      return;
+   }else{
+      updateList(e);
+   }
 }
 
 
 
 
+// for (let i = 0; i < btn.length; i++) {
+//    btn[i].addEventListener('click', function (e) {
+//       updateList(e);
+//    })
+// }
